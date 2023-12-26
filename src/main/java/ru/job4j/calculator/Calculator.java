@@ -2,20 +2,21 @@ package ru.job4j.calculator;
 
 public class Calculator {
 
-    public static int func1(int x) {
-        int y = x * x + 1;
-        return y;
+    public static void plus(int first, int second) {
+        int result = first + second;
+        System.out.println(result);
     }
 
-    public static int func2(int x) {
-        int y = 15 / x;
-        return y;
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
     }
 
     public static void main(String[] args) {
-        int result1 = Calculator.func1(100);
-        int result2 = Calculator.func2(5);
-        int result3 = result1 + result2;
-        System.out.println(result3);
+        plus(1, 2);
+        plus(10, 11);
+        minus(7, 3);
+        minus(2, 6);
     }
+
 }
