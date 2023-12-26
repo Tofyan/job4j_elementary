@@ -1,16 +1,21 @@
 package ru.job4j.calculator;
 
 public class Calculator {
-    public static void hello(String name, int age) {
-        System.out.println("Hello, " + name + ", age = " + age);
+
+    public static int func1(int x) {
+        int y = x * x + 1;
+        return y;
+    }
+
+    public static int func2(int x) {
+        int y = 15 / x;
+        return y;
     }
 
     public static void main(String[] args) {
-        String name = "Job4j";
-        int age = 6;
-        Calculator.hello(name, age);
-        Calculator.hello(name, age);
-        Calculator.hello(name, age);
-        Calculator.hello(name, age);
+        int result1 = Calculator.func1(100);
+        int result2 = Calculator.func2(5);
+        int result3 = result1 + result2;
+        System.out.println(result3);
     }
 }
